@@ -1,0 +1,96 @@
+*{box-sizing
+     :border-box;}
+body {
+    background-color: #6ff;
+    background-image: linear-gradient(blue 70%, black);
+    background-repeat: no-repeat;     /* repeat-x eða repeat-y */
+    background-position: 0px 0px; /* föst staðsetning frá vinstra horni efst */
+    background-position: center middle;
+    /* X lárétt: left, center, right. Y lóðrétt: top, middle, bottom */
+    background-attachment: fixed; /* scroll */	
+}
+
+
+.fotur{
+    padding: 2em;
+    display: flex;
+    float: center;
+    text-align: center;
+    margin: 0em; 
+    color: beige;
+    
+}
+h4 {
+    padding-left: 4em;
+    padding-right: 4em ;
+
+}
+.topnav{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    background-color: beige;
+    float: right;
+
+
+}
+li a:hover {
+    background-color: yellow;
+  }  
+  
+
+
+blockquote{
+    background-color: beige;
+    padding: 2em;
+}
+.haus{
+text-align: center;
+color: beige;
+}
+.col-sima-midja{
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-column: 1fr, 1fr;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0em;
+}
+.adal {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.hlid1{
+    grid-column: 2/2;
+    grid-row: 1;
+    padding-top: 2.5em;
+}
+.gulur-bakgrunnur{
+    background: #6ff;
+    background-image: linear-gradient(yellow,white);
+    margin: -1em;
+                /*  litur,   mynd,  staðsetning X-Y,  fixed,  repeat -x -y */
+}
+.col-sima-midja{
+    padding-left: 10em;
+    padding-right: 10em;
+}
+@media screen and(min-width: 37.5em){
+    .col-sima-midja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 0em;
+
+}   .adal{
+    grid-column: 1;
+    grid-row: 1;
+}
+    .hlid1{
+    grid-column: 1;
+    grid-row: 2;
+}
+}
