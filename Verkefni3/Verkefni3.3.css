@@ -1,0 +1,90 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "topin topin topin topin topin"
+    "vel vel vel vel vel"
+    "m m m vin h"
+    "f f f f f";
+    padding-left: 7em;
+    padding-right: 7em;
+}
+.topnav{
+    grid-area: topin;
+    border-style: solid;
+    border-color: green;
+    text-align: justify;
+    padding: 10 px;
+}
+main{
+    display:flex;
+    float: left;
+    border-style: solid;
+    border-color: aqua;
+}
+blockquote{
+    border-style: solid;
+    border-color: blue;
+    padding-left: 3em;
+    padding-top: 1em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+
+}
+li{
+    display: flex;
+    float: left;
+    padding-left: 4em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.header{
+    grid-area: vel;
+    border-style:solid ;
+    border-color: red;
+    text-align: center;
+    padding: 2em;align-items:end;}
+
+.as1{
+    grid-area: vin;
+    float: right;}
+.art1{
+    grid-area: m;
+    align-items:end;}
+    
+.as2{
+    grid-area: h;}
+.footer{
+    grid-area: f;
+    display: flex;
+    float: left;
+}
+
+header, h1{
+    font-size: 30px;
+    font-style: italic;
+    padding: 2em;}
+
+@media screen and(min-width: 37.5em) {
+.as1{
+    display: grid;
+    grid: column 1fr;
+    gap: 2em;
+}
+.as2{
+    display: grid;
+    grid: column 1fr;
+    gap: 2em;
+}
+}
+
+@media screen and(min-width: 48em) {
+.topmenu, .footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}    
+}
+
+
