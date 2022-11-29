@@ -1,0 +1,82 @@
+body{
+    background-color: red;
+}
+h1{
+    display: flex;
+    text-align: center;
+}
+p{
+    margin: -1em;
+    display: grid;
+    grid-template-columns: 2fr;
+}
+div{
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    size: 500px, 500px;
+    gap: 5px;
+}
+.Freyr{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0em; 
+}
+.column2{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 0em;
+}
+
+p { grid-area: header; }
+.Freyr { grid-area: main; }
+.tomt {grid-area:aut;}
+
+
+.column2 {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'aut main';
+  gap: 5px;
+  padding: 10px;
+}
+
+
+
+  
+  /* For width 400px and larger: */
+    @media only screen and (min-width: 30em) {
+        p { 
+            background-image: url('../Verkefni5/supervolcano480.png');
+            max-width: 100%;
+            height: auto;
+    }
+        .col-1{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 0em;
+    }}
+    @media only screen and (min-width: 48em) {
+        p { 
+            background-image: url('../Verkefni5/supervolcano768.png');
+            max-width: 100%;
+            height: auto; 
+    }
+        .col-2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0em;
+    }}
+    @media only screen and (min-width: 80em) {
+        p { 
+            background-image: url('../Verkefni5/supervolcano.png'); 
+            max-width: 100%;
+            height: auto;
+        }
+        .col-3{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0em;
+        }    
+        }
