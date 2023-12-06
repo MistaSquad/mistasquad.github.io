@@ -1,0 +1,94 @@
+*{box-sizing:border-box}
+body{background:url(Chain2Amal.jpg);margin:0;text-align:center;animation:splash;animation-duration:8s}
+.haus{background-color:#6ff;padding:1em;padding-bottom:5em;background-image:url(BodyArmourHeader.jpg);background-repeat:repeat;color:beige;text-align:center;font-size:2vw}
+img{display:block}
+.Fight1,.Fight2,.Fight3{background-image:url(Fight.jfif);width:425px;height:250px;margin:0;padding:0}
+.DivF{background-image:url(chain.jfif)}
+.topnav{padding:0;list-style-type:none;margin:0;overflow:hidden;display:inline-block;color:beige;padding-left:80em;padding-bottom:5em}
+a:visited{color:green}
+a:hover{color:#ff69b4}
+a:active{color:#00f}
+.lin{display:flex}
+.lin a{color:#fff;text-align:center;padding:16px 16px;text-decoration:none}
+.lin a:hover:not(.active){background-color:#111}
+.fotur{padding:2em;display:flex;text-align:center;margin:0}
+.Fugl1,.Fugl2,.Fugl3{background-image:url(ContactBirs.jfif);width:425px;height:250px;margin:0;padding:0}
+p{font-family:'Times New Roman',Times,serif}
+.grid-container{display:grid;grid-template-columns:auto auto;grid-gap:10px;padding:10px;margin:2em}
+.grid-container,img{grid-gap:0}
+.grid-container>div{text-align:center;padding:20px 0;font-size:30px}
+footer{background:#999}
+#myBtn{display:none;position:fixed;bottom:20px;right:30px;z-index:99;border:none;outline:0;background-color:#00f;color:#fff;cursor:pointer;padding:15px;border-radius:10px;font-size:18px}
+table{background:silver;border:2px solid #000;border-collapse:collapse}
+tbody :nth-child(odd){background:#663399}
+td,th{border:1px dotted #deb887;padding:10px}
+tbody tr{background:#ffebcd}
+text{font-family:'Times New Roman',Times,serif}
+.Classual th{padding:10px}
+.content1,.content2{display:none}
+input:checked~.content1{display:block}
+input:checked~.mobile-container{display:block}
+input:checked~.content2{display:block}
+.checkbox-class{display:none}
+.menu-toggle{display:none}
+.btn{background:#943;padding-top:20px;padding-bottom:20px;padding-left:50px;padding-right:50px}
+.content1,.content2{background:silver}
+.button{display:flex}
+.Fuglar{display:grid;grid-template-columns:auto}
+.contact{display:grid;grid-template-columns:auto}
+.about{display:grid;grid-template-columns:auto}
+.bardagi{display:grid;grid-template-columns:auto}
+.content1{background:url(Cosplay.jpeg)}
+.content2{width:min-content;height:min-content}
+h1{text-align:center}
+.box{width:40%;margin:0 auto;background:rgba(255,255,255,.2);padding:35px;background-clip:padding-box;text-align:center}
+.button{font-size:1em;padding:10px;color:#fff;text-decoration:none;cursor:pointer;transition:all .3s ease-out}
+.overlay{position:fixed;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.7);transition:opacity .5s;visibility:hidden;opacity:0}
+.overlay:target{visibility:visible;opacity:1}
+.popup{margin:70px auto;padding:20px;background:#fff;width:30%;position:relative;transition:all 5s ease-in-out}
+.popup h2{margin-top:0;color:#333;font-family:Tahoma,Arial,sans-serif}
+.popup .close{position:absolute;top:20px;right:30px;transition:all .2s;font-size:30px;font-weight:700;text-decoration:none;color:#333}
+.popup .content{max-height:30%;overflow:auto}
+#popup{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;padding:20px;border:1px solid #ccc;z-index:1000}
+#closeBtn{position:absolute;top:10px;right:10px;cursor:pointer}
+.hamburger-icon{display:block}
+.innermenu{display:flex;float:left;width:100%;background-color:#333;padding:.5em;overflow:hidden}
+.innermenu~a{padding:15px;text-align:center;color:#fff;border:#fff;text-decoration:none}
+.topnav{overflow:hidden;background-color:#333;position:relative}
+.topnav a{color:#fff;padding:14px 16px;text-decoration:none;font-size:17px;display:block}
+.topnav a.icon{background:#000;display:block;position:absolute;right:0;top:0}
+.hamburger-icon{display:none}
+.mobile-container{display:none}
+footer{background:#999;padding:50px}
+.slides{display:grid;grid-template-columns:1fr 1fr 1fr;width:768px;height:506px;overflow:hidden;background-color:#eee;border:solid 5vmin #eee;border-bottom-color:#fff;border-left-color:#eee;border-radius:2px;border-right-color:#eee;border-top-color:#ddd;box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset,0 5px 10px 5px rgba(0,0,0,.25);margin:10vh 10vw;height:80vh;position:relative}
+.slides img{width:768px;height:506px;border:solid 2px;border-bottom-color:#ffe;border-left-color:#eed;border-right-color:#eed;border-top-color:#ccb}
+.slides>div{animation-name:hreyfing;animation-duration:15s;animation-delay:5s;animation-iteration-count:infinite}
+@keyframes hreyfing{
+0%{transform:translateX(0)}
+50%{transform:translateX(-100%)}
+100%{transform:translateX(-200%)}
+}
+@keyframes splash{
+0%{transform:rotateZ(180deg)}
+20%{transform:translateY(50%)}
+40%{transform:translateY(-50%)}
+60%{transform:translateY(20%)}
+80%{transform:translateY(-20%)}
+100%{transform:translateY(0)}
+}
+@media screen and (max-width:30em){
+.grid-container{display:grid;grid-template-columns:auto;grid-gap:10px;padding:10px}
+.grid-container>div{text-align:center;padding:20px 0;font-size:30px}
+thead{display:none}
+td{display:block}
+.Fugl2,.Fugl3{display:none}
+.Fight2,.Fight3{display:none}
+td::before{content:attr(texti);float:left}
+.logo-footer{width:175px;height:150px}
+}
+@media screen and (max-width:600px){
+.innermenu{display:none}
+input:checked~.innermenu{display:block}
+nav .mobile-container{display:block}
+.hamburger-icon{display:block}
+}
