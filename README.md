@@ -1,1 +1,256 @@
-[# 2Verkefni2](https://github.com/MistaSquad/mistasquad.github.io/blob/main/2Verkefni2.html)https://github.com/MistaSquad/mistasquad.github.io/blob/main/2Verkefni2.html
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <script src="https://kit.fontawesome.com/c458b0c5a8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Verkefni 7 LokaVerkefni</title>
+    <link rel="stylesheet" href="2Verkefni2.css">
+   <style>
+      #popup {
+          display: block;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          padding: 20px;
+          border: 1px solid #ccc;
+          z-index: 1000;
+      }
+
+      #closeBtn {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+      }
+      
+    .innermenu a {
+      padding: 15px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Show the navigation menu when the checkbox is checked */
+    .menu-toggle:checked + .menu-container .innermenu {
+      display: flex;
+    }
+  </style>
+  </head>
+  <body>
+    <header class="haus">
+        <h1>
+          MedievalBonfire
+        </h1>
+        <div class="logo">
+          <img src="Logo.jpg" alt="logo" width="175px" height="150px">
+        </div>
+    </header>
+  
+        <section class="lin">
+          <input type="checkbox" id="menuToggle" class="menu-toggle">
+            <label for="menuToggle" class="hamburger-icon">&#9776;</label>
+              <div class="menu-container">
+                <nav class="innermenu"> 
+                  <a href="#about"><i class="fa-solid fa-dragon"></i>About</a> 
+                  <a href="#contact"><i class="fa-solid fa-crow"></i>Contact</a>
+                  <a href="#offer"><i class="fa-solid money-bill"></i>What We Offer</a>
+                </nav>
+              </div>
+                <div class="mobile-container" id="myLinks">
+                  <nav class="mobileInnerMenu"> 
+                    <a href="#about"><i class="fa-solid fa-dragon"></i>About</a> 
+                    <a href="#contact"><i class="fa-solid fa-crow"></i>Contact</a>
+                    <a href="#offer"><i class="fa-solid fa-money-bill-1"></i>Offer</a>  
+                  </nav> 
+                </div>
+            </nav>
+        </section>
+      <div class="grid-container">
+      <section class="button">
+        <div class="btn">
+          <input id="btn_1" type="checkbox" class="checkbox-class">
+          <label for="btn_1">Coolest Exhibition 2022</label>
+          <div class="content1">
+            <img src="Medieval-Exhibition.jpg">
+          </div>
+        <div class="btn">
+          <input id="btn_2" type="checkbox" class="checkbox-class">
+          <label for="btn_2">Coolest Cosplay 2022</label>
+      
+          <div class="content2">
+            <img src="Cosplay.jpeg">
+          </div>
+        </div>
+      </section>
+    
+    <section class="slides">
+      <div>
+        <img src="Medieval1.jfif" alt="">
+      </div>
+      <div>
+        <img src="Medieval2.jpg" alt="">
+      </div>
+      <div>
+        <img src="Medieval3.jpg" alt="">
+      </div>         
+    </section>
+  </div>
+</div>
+      <div class="grid-container">
+      
+      <section class="intro">
+        <h1>Armour, Swords, Dragons and Campfires</h1>
+        <h3>An Exhibition for Collectors and Enjoyers</h3>
+        <p>Welcome to MedievalBonfire, an exhibition dedicated to all things medieval. From armour to swords, dragons to campfires, we've got it all.</p>
+        <p>Bring your collection and showcase it to other enthusiasts. And who knows? You may even get your own stand! We welcome every collection with fantasy flavours.</p>
+        <p>This space is dedicated to give you an idea of what you can expect at MedievalBonfire.</p>
+        <p> Our exhibition is a celebration of medieval culture and all that it entails. Come see for yourself and immerse yourself in the world of knights, castles, and dragons.</p>
+      </section>
+    
+      <img src="tenor.gif" alt="Aðal" height="600px" width="400">
+
+    </div>
+
+    <div class="grid-container">
+      <section class="service">
+        <h1 id="offer">What We Offer</h1>
+        <p>At MedievalBonfire, we offer a unique exhibition experience where collectors and enthusiasts </p>
+        <p>can showcase their fantasy-themed collections of armour, swords, and dragon memorabilia.</p>
+        <p> With our themed campfires and medieval decor, you'll feel like you've stepped into a fantasy world.</p>
+        <p> Click here to learn more about our upcoming events and how to reserve your own stand.</p>
+      </section>
+
+
+      <table>
+        <thead>
+            <tr class="Classual">
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td texti="Time">10:00</td>
+                <td texti="Cosplay">Cosplay</td>
+                <td texti="Cosplay">Cosplay</td>
+                <td texti="Cosplay">Cosplay</td>
+                <td texti="Cosplay">Cosplay</td>
+            </tr>
+            <tr>
+                <td texti="Time">12:00</td>
+                <td texti="Exhibit">Exhibit</td>
+                <td texti="Exhibit">Exhibit</td>
+                <td texti="Exhibit">Exhibit</td>
+                <td texti="Exhibit">Exhibit</td>
+            </tr>
+            <tr>
+                <td texti="Time">14:00</td>
+                <td texti="Food">Food</td>
+                <td texti="Food">Food</td>
+                <td texti="Food">Food</td>
+                <td texti="Food">Food</td>
+            </tr>
+            <tr>
+              <td texti="Time">16:00</td>
+              <td texti="Cleanup">Cleanup</td>
+              <td texti="Cleanup">Cleanup</td>
+              <td texti="Cleanup">Cleanup</td>
+              <td texti="Cleanup">Cleanup</td>
+          </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container">
+        <img src="Ticket.jfif" width="200px" height="200px">
+        <h1>Day pass:</h1>
+        <p>for the low price of 200 USD you can explore all there is to see at our event!</p>
+        </div>
+        <div class="grid-container">
+        <img src="Booth.jfif" width="200 px" height="200 px">
+        <h1>Booth:</h1>
+        <p>You can show all of our atendees your beautiful collection and all you
+        have to is give us 50 USD and we will provide you with a place to house your collection</p>
+        </div>
+    </div>
+    <div id="popup">
+      <span id="closeBtn" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+      <h2>Welcome to the website!</h2>
+  </div>
+
+  <button id="scrollBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Top</button>
+
+    <div class="grid-container">
+      <section class="about">
+            <h3 id="about">About</h3>
+            <p>MedievalBonfire is an event for collectors and enjoyers of Armour, Swords, Dragons, and Campfires.</p>
+            <p> Our exhibition welcomes every collection with fantasy flavours.</p>
+            <p>Bring your collection here, and you may get your own stand!</p>
+            <p>Our goal is to create a unique experience for attendees, allowing</p>
+            <p> them to immerse themselves in the world of medieval fantasy and collectibles.</p>
+            <p> Our team is passionate about making MedievalBonfire stand out from other </p>
+            <p>exhibitions and events, and we are excited to share this experience with you.</p>
+      </section>
+      <section class="bardagi">
+              <div class="Fight1"></div>
+              <div class="Fight2"></div>
+              <div class="Fight3"></div>
+      </section>
+    </div>
+    <div class="grid-container">
+    <section class="contact">
+      <h3 id="contact">CONTACT US</h3>
+            <p>
+            MedievalBonfire is excited to welcome you to our 
+            exhibition of Armour, Swords, Dragons, and Campfires.
+            If you have any questions or comments, please 
+            feel free to contact us at: 1234 Kingdom Road, Email: info@medievalbonfire.com  Tel: 581-2345
+            </p>
+        <form action="action_page.php">
+          <label for="Name">Name</label>
+          <input type="text" id="Name" name="Name" placeholder="Your Name..">
+          
+          <label for="email">email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+      
+          <label for="phone number">phone number</label>
+          <input type="text" id="phone number" name="phone number" placeholder="Your phone number..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+    </section>
+      <section class="Fuglar">
+        <div class="Fugl1"></div>
+        <div class="Fugl2"></div>
+        <div class="Fugl3"></div>
+      </section>
+    
+    </div>
+  </body>
+  <footer>
+      <img src="Logo.jpg" alt="logo" width="300px" height="250px" class="logo-footer">
+    <tr>
+      <a href="http://instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+      <a href="http://twitter.com"><i class="fa-brands fa-square-x-twitter fa-xl"></i></a>
+      <a href="http://youtube.com"><i class="fa-brands fa-square-youtube fa-xl"></i></a>
+      <a href="http://facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+    </tr>
+    </footer>
+</html>
